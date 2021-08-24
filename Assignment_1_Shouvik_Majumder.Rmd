@@ -1,0 +1,62 @@
+---
+title: "Introduction to R programming Exercise 1 - Assignment Submission"
+author: "Shouvik Majumder"
+date: "Last updated on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+    
+    
+---
+Submission: Testing to see changes
+```{r}
+
+```
+1. Assign a set of 100 numbers to a variable x. Make sure it includes some positive and some negative numbers. Display the contents of the vetor afterward. Is it really a vector? Enter is.vector(x) to confirm.
+
+```{r}
+x<-seq(-100,100,length=100)
+x
+is.vector(x)
+
+```
+
+2. Print the 3rd and 6th elements of x with a single command.
+
+```{r}
+x[c(3,6)]
+```
+
+3. Print (i.e. display) all elements of x that are non-negative.
+
+```{r}
+x[x>=0]
+```
+
+4.Change the last value of your x vector to a different number. Change the 2nd, 6th, and 10th values of x to 1, 2, 3 with a single command.
+    
+```{r}
+x[length(x)]<-5000
+x[c(2,6,10)] <- c(1,2,3)
+x
+```
+
+5. For each of the following examples determine why the code does not work and correct it. Use R's built in help functions if you have trouble on the second set.
+```{r}
+
+my_variable <- 10
+my_varıable
+```
+
+```{r}
+x<-c(2,34,61,21,NA ,32)
+y<-c(5,56,789,23,3,90)
+z <- mean(x*y, na.rm=TRUE)
+z
+```
+
+
+
+
+
+
